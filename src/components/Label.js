@@ -5,7 +5,7 @@ export class LabelTitle extends Component {
   render() {
     return (
       <div className="labelTitle">
-        <label>{this.props.label}</label>
+        <label className={this.props.text}>{this.props.label}</label>
       </div>
     );
   }

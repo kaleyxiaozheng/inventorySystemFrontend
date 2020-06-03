@@ -36,7 +36,7 @@ export class Login extends Component {
                             </div>
                         </div>
                         <div className="buttonLabel">
-                            <SubmitButtonRouter text="submitButton" label="Submit" path="/Signup"></SubmitButtonRouter>
+                            <SubmitButtonRouter text="submitButton" label="Submit" path="/Submit"></SubmitButtonRouter>
                         </div>
                         <div className="forgetLabel">
                             <div className="left"></div>
@@ -45,7 +45,7 @@ export class Login extends Component {
                                     <LabelTitle label="Forget"></LabelTitle>
                                 </div>
                                 <div >
-                                    <LabelButtonRouter text="passwordTitle" label="password?"></LabelButtonRouter>
+                                    <LabelButtonRouter text="passwordTitle" label="password?" path="/ForgetPassword"></LabelButtonRouter>
                                 </div>
                             </div>
                         </div>

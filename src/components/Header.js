@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/Header.css';
 import { LabelButtonRouter } from './Button';
 import invenLogo from '../logo/InvenLogo.png';
+import { LabelTitle } from "./Label";
+import { Link } from "react-router-dom";
 
 export class Header extends Component {
     render() {
@@ -10,15 +12,17 @@ export class Header extends Component {
                 <div className="leftHeader"></div>
                 <div className="centreHeader">
                     <div>
-                    <img className="invenLogo" src={invenLogo} />
+                    <a href="/">
+                        <img className="invenLogo" src={invenLogo} />
+                        </a>
                     </div>
                     <div className="invenTitle">
-                        <h3>AIMS</h3>
+                        <Link to="/" ><h3>AIMS</h3></Link>
                     </div>
                 </div>
                 <div className="rightHeader">
-                    <LabelButtonRouter label="Login" path="/Login"></LabelButtonRouter>
-                    <LabelButtonRouter label="Sign up" path="/Signup"></LabelButtonRouter>
+                    <LabelButtonRouter text="labelTitle" label="Login" path="/Login"></LabelButtonRouter>
+                    <LabelButtonRouter text="labelTitle" label="Sign up" path="/Signup"></LabelButtonRouter>
                 </div>
             </div>
         );

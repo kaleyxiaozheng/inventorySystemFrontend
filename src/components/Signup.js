@@ -6,7 +6,7 @@ export class Signup extends Component{
     render(){
         return(
             <div className="bodyArea signupArea">
-                <h3>sign up</h3>
+                <Link to="/" ><h3>sign up</h3></Link>
                 <Link to="/" >back</Link>
             </div>
         );
