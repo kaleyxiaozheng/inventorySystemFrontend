@@ -27,7 +27,7 @@ export class Login extends Component {
                     </div>
                 </div>
                 <div className="adminBottom"></div>
-                <Link to="/" >back</Link>
+                {/* <Link to="/" >back</Link> */}
             </div>
         );
     }
