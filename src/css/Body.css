@@ -1,4 +1,5 @@
 .bodyArea {
     background-color: #099ae8;
     text-align: center;
+    flex: 1;
 }

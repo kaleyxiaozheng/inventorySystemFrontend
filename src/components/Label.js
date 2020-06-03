@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Label.css'; // Tell webpack that Button.js uses these styles
+import '../css/Label.css';
 
 export class LabelTitle extends Component {
   render() {

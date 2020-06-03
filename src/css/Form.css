@@ -1,4 +1,15 @@
-.inputForm {
-    height: 50%;
+/* .inputForm {
     width: 100%;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}  */
+
+input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-weight: bolder;
 }
