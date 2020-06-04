@@ -1,15 +1,33 @@
-/* .inputForm {
-    width: 100%;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}  */
-
-input {
+.lableForm {
+  font-weight: bolder;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+input{
     height: 30px;
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding-left: 10px;
     font-weight: bolder;
+    
+}
+
+.checkboxForm {
+  display: flex;
+  padding-top: 10px;
+}
+
+.checkboxCheck{
+  height: auto ;
+}
+
+.rembMe {
+  font-weight: bolder;
+  padding-left: 10px;
+}
+
+.inputForm {
+  width:100%;
 }
