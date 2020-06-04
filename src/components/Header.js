@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../css/Header.css';
 import { LabelButtonRouter } from './Button';
 import invenLogo from '../logo/InvenLogo.png';
-import { LabelTitle } from "./Label";
 import { Link } from "react-router-dom";
 
 export class Header extends Component {

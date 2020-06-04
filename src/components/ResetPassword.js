@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Login.css';
-import { LoginForm } from "./Form";
 import { LabelTitle } from "./Label";
-import { LabelButtonRouter } from './Button';
 
 export class ResetPassword extends Component {
 

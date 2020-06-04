@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../css/Form.css';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 
 export class LoginForm extends Component {
 
@@ -37,9 +35,9 @@ export class LoginForm extends Component {
   contactSubmit(e) {
     e.preventDefault();
     if (this.handleValidation()) {
-      // alert("Form submitted");
+      console.log(this.state)
     } else {
-      // alert("Form has errors.")
+      console.log(this.state)
     }
 
   }
@@ -53,10 +51,6 @@ export class LoginForm extends Component {
   render() {
     return (
       <div>
-        {/* <form> 
-          <input className={this.props.className} type={this.props.type} placeholder={this.props.text} />
-        </form> */}
-
         <form onSubmit= {this.contactSubmit.bind(this)}>
           <div className="lableForm">
             <label>User Name</label>
@@ -84,14 +78,3 @@ export class LoginForm extends Component {
   }
 }
 
-export class InputField extends Component {
-  render() {
-    return (
-      <div>
-        <form>
-          <TextField className={this.props.className} label={this.props.label} variant="outlined" />
-        </form>
-      </div>
-    );
-  }
-}
