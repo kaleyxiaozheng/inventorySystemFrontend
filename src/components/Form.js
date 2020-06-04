@@ -69,7 +69,7 @@ export class LoginForm extends Component {
             <label>Password</label>
           </div>
           <div ></div>
-          <input className="inputForm" type="text" placeholder="Password" onChange={this.handleChange.bind(this, "password")} value={this.state.fields["password"]}></input>
+          <input className="inputForm" type="password" placeholder="Password" onChange={this.handleChange.bind(this, "password")} value={this.state.fields["password"]}></input>
           <span className="error">{this.state.errors["password"]}</span>
           <div className="checkboxForm">
             <input className="checkboxCheck" type="checkbox"></input>

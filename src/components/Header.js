@@ -21,8 +21,8 @@ export class Header extends Component {
                     </div>
                 </div>
                 <div className="rightHeader">
-                    <LabelButtonRouter text="labelTitle" label="Login" path="/Login"></LabelButtonRouter>
-                    <LabelButtonRouter text="labelTitle" label="Sign up" path="/Signup"></LabelButtonRouter>
+                    <LabelButtonRouter text="labelTitle" label="Login" path="/login"></LabelButtonRouter>
+                    <LabelButtonRouter text="labelTitle" label="Sign up" path="/signup"></LabelButtonRouter>
                 </div>
             </div>
         );

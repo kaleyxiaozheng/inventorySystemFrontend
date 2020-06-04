@@ -4,7 +4,7 @@ import { LoginForm } from "./Form";
 import { LabelTitle } from "./Label";
 import { LabelButtonRouter } from './Button';
 
-export class Login extends Component {
+export class ResetPassword extends Component {
 
     render() {
         return (
@@ -14,9 +14,9 @@ export class Login extends Component {
                     <div className="innerLeft"></div>
                     <div className="innerCentre">
                         <div className="adminTitle">
-                            <h1><LabelTitle text="infoLabel" label="Sign in"></LabelTitle></h1>
+                            <h1><LabelTitle text="infoLabel" label="Reset Password"></LabelTitle></h1>
                         </div>
-                        <LoginForm></LoginForm>
+                        {/* <LoginForm></LoginForm>
                         <div className="forgetLabel">
                             <div className="left"></div>
                             <div className="right">
@@ -24,10 +24,10 @@ export class Login extends Component {
                                     <LabelTitle label="Forget"></LabelTitle>
                                 </div>
                                 <div >
-                                    <LabelButtonRouter text="passwordTitle" label="password?" path="/resetpassword"></LabelButtonRouter>
+                                    <LabelButtonRouter text="passwordTitle" label="password?" path="/ForgetPassword"></LabelButtonRouter>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="innerRight"></div>
                 </div>

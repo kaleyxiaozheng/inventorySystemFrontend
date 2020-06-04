@@ -43,3 +43,6 @@ input{
   width: 100%;
 }
 
+.submitLabel {
+  padding-left: 10px;
+}
