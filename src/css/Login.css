@@ -35,6 +35,7 @@
 .infoLabel {
     font-weight: bolder;
     text-align: left;
+    color: black;
 }
 
 .formLabel{
@@ -72,6 +73,7 @@
     text-align: center;
     width: 100%;
     padding: 10px;
+    
 }
 
 .forgetLabel {
@@ -98,6 +100,12 @@
     font-weight: bolder !important;
 }
 
-.submitButton{
+/* .submitButton{
     width: 100%;
+} */
+
+.errorLabel {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
 }
