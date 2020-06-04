@@ -111,6 +111,7 @@
 }
 
 .submitLabel {
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     color: white;
+    padding-top: 10px;
 }

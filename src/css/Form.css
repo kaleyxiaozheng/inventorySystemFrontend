@@ -31,3 +31,15 @@ input{
 .inputForm {
   width:100%;
 }
+
+.error {
+  color: red;
+  font-weight: bolder;
+}
+
+.submitInput {
+  background-color: #005ce6;
+  color: white;
+  width: 100%;
+}
+
