@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Login.css';
-import { Form } from "./Form";
+import { Form, InputField} from "./Form";
 import { LabelTitle } from "./Label";
 import { SubmitButtonRouter, LabelButtonRouter } from './Button';
 
@@ -70,18 +70,18 @@ export class Login extends Component {
                         <div className="formLabel">
                             <Form type="text" text="User Name" value={this.state.username} ></Form>
                         </div>
-                        <div className="errorLabel">
+                        {/* <div className="errorLabel">
                             {this.state.usernameError}
-                        </div>
+                        </div> */}
                         <div className="infoLabel">
                             <LabelTitle text="infoLabel" label="Password"></LabelTitle>
                         </div>
                         <div className="formLabel">
                             <Form type="password" text="Password" value={this.state.password} ></Form>
                         </div>
-                        <div className="errorLabel">
+                        {/* <div className="errorLabel">
                             {this.state.passwordError}
-                        </div>
+                        </div> */}
                         <div className="checkboxArea">
                             <div className="checkboxLabel">
                                 <Form type="checkbox"></Form>
@@ -92,7 +92,7 @@ export class Login extends Component {
                         </div>
                         <div className="buttonLabel">
                             {/* <SubmitButtonRouter text="submitButton" label="Submit" path="/Submit" ></SubmitButtonRouter> */}
-                            <Form type="submit" text="Submit"></Form>
+                            <Form className="submitLabel" type="submit" text="Submit"></Form>
                         </div>
                         <div className="forgetLabel">
                             <div className="left"></div>

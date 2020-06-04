@@ -8,7 +8,19 @@ export class Form extends Component {
     return (
       <div className="inputForm">
         <form> 
-          <input type={this.props.type} placeholder={this.props.text} onSubmit={this.props.handler} />
+          <input className={this.props.className} type={this.props.type} placeholder={this.props.text} />
+        </form>
+      </div>
+    );
+  }
+}
+
+export class InputField extends Component {
+  render() {
+    return (
+      <div>
+        <form> 
+          <TextField className={this.props.className} label={this.props.label} variant="outlined" />
         </form>
       </div>
     );
