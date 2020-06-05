@@ -17,7 +17,6 @@ export class LoginForm extends Component {
     let errors = {};
     let formIsValid = true;
 
-    //Name
     if (!fields["name"]) {
       formIsValid = false;
       errors["name"] = "User Name can not be empty";

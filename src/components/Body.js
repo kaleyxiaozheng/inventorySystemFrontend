@@ -6,7 +6,8 @@ export class Body extends Component {
     render() {
         return (
             <div className="bodyArea">
-                <img className="clientLogo" src={clientLogo} />
+                {/* <img className="clientLogo" src={clientLogo} /> */}
+                <h1>ADB</h1>
             </div>
         );
     }
