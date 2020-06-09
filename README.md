@@ -69,8 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ### 'Run the product locally
-> 1. Clone the project from github
-> 2. Go to the project folder
+> 1. Open terminal and create a directory `mkdir InventoryManagement`
+> 2. Go into the directory `cd InventoryManagement`
+> 3. Clone the project from github `git clone https://github.com/kaleyxiaozheng/inventorySystemFrontend` 
+> 2. Go to the project directory `cd inventorySystemFrontend`
 > 3. type command `npm install` from terminal
 > 4. type command `npm start` from terminal 
 > 5. Open browser and type `http://localhost:3000`
