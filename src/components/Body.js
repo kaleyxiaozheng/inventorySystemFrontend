@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Body.css';
-import clientLogo from '../logo/ClientLogo.png';
+import clientLogo from '../logo/adbLogo.jpeg';
 
 export class Body extends Component {
     render() {
