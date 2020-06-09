@@ -68,7 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-### 'Run the product locally
+### 'Run the project locally
 > 1. Open terminal and create a directory `mkdir InventoryManagement`
 > 2. Go into the directory `cd InventoryManagement`
 > 3. Clone the project from github `git clone https://github.com/kaleyxiaozheng/inventorySystemFrontend` 
