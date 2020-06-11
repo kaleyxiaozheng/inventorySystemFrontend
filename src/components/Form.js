@@ -33,6 +33,7 @@ export class LoginForm extends Component {
 
   contactSubmit(e) {
     e.preventDefault();
+
     if (this.handleValidation()) {
       console.log(this.state)
     } else {
@@ -44,25 +45,31 @@ export class LoginForm extends Component {
   handleChange(field, e) {
     let fields = this.state.fields;
     fields[field] = e.target.value;
-    this.setState({ fields });
+    this.setState({ 
+      [e.target.name]: e.target.value,
+      fields });
   }
 
   render() {
+    const {fullName} = this.state
+    const {password} = this.state
     return (
       <div>
+        <p>Full Name:  {fullName}</p>
+        <p>Password:  {password}</p>
         <form onSubmit= {this.contactSubmit.bind(this)}>
           <div className="lableForm">
             <label>User Name</label>
           </div>
           <div >
-            <input className="inputForm" type="text" placeholder="User name" onChange={this.handleChange.bind(this, "name")} value={this.state.fields["name"]}></input>
+            <input className="inputForm" type="text" placeholder="User name" onChange={this.handleChange.bind(this, "name")} name='fullName' value={this.state.fields["name"] }></input>
             <span className="error">{this.state.errors["name"]}</span>
           </div>
           <div className="lableForm">
             <label>Password</label>
           </div>
           <div ></div>
-          <input className="inputForm" type="password" placeholder="Password" onChange={this.handleChange.bind(this, "password")} value={this.state.fields["password"]}></input>
+          <input className="inputForm" type="password" placeholder="Password" onChange={this.handleChange.bind(this, "password")} name='password' value={this.state.fields["password"]}></input>
           <span className="error">{this.state.errors["password"]}</span>
           <div className="checkboxForm">
             <input className="checkboxCheck" type="checkbox"></input>
