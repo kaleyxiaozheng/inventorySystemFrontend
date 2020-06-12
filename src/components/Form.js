@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import axios from "axios";
 import '../css/Form.css';
+import { SubmitButtonRouter } from './Button';
 
 export class LoginForm extends Component {
 
@@ -17,9 +19,9 @@ export class LoginForm extends Component {
     let errors = {};
     let formIsValid = true;
 
-    if (!fields["name"]) {
+    if (!fields["username"]) {
       formIsValid = false;
-      errors["name"] = "User Name can not be empty";
+      errors["username"] = "User name can not be empty";
     }
 
     if (!fields["password"]) {
@@ -35,9 +37,9 @@ export class LoginForm extends Component {
     e.preventDefault();
 
     if (this.handleValidation()) {
-      console.log(this.state)
+      // console.log(this.state)
     } else {
-      console.log(this.state)
+      // console.log(this.state)
     }
 
   }
@@ -50,20 +52,19 @@ export class LoginForm extends Component {
       fields });
   }
 
+
   render() {
-    const {fullName} = this.state
+    const {username} = this.state
     const {password} = this.state
     return (
       <div>
-        <p>Full Name:  {fullName}</p>
-        <p>Password:  {password}</p>
         <form onSubmit= {this.contactSubmit.bind(this)}>
           <div className="lableForm">
             <label>User Name</label>
           </div>
           <div >
-            <input className="inputForm" type="text" placeholder="User name" onChange={this.handleChange.bind(this, "name")} name='fullName' value={this.state.fields["name"] }></input>
-            <span className="error">{this.state.errors["name"]}</span>
+            <input className="inputForm" type="text" placeholder="User Name" onChange={this.handleChange.bind(this, "username")} name='username' value={this.state.fields["username"] }></input>
+            <span className="error">{this.state.errors["username"]}</span>
           </div>
           <div className="lableForm">
             <label>Password</label>
@@ -76,7 +77,8 @@ export class LoginForm extends Component {
             <label className="rembMe" >Remember me</label>
           </div>
           <div className="submitLabel">
-            <input className="submitInput" type="submit"></input>
+            <input className="submitInput" type="submit" path="/dashboard"></input>
+            <SubmitButtonRouter text="labelTitle" label="Submit" path="/dashboard"></SubmitButtonRouter>
           </div>
         </form>
       </div>

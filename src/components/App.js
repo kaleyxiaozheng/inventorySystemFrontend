@@ -7,6 +7,7 @@ import { Body } from "./Body";
 import { Footer } from "./Footer";
 import { Signup } from "./Signup";
 import { ResetPassword } from "./ResetPassword";
+import { Dashboard } from "./Dashboard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route eaxct path="/login" component={Login} />
         <Route eaxct path="/signup" component={Signup} />
         <Route eaxct path="/resetpassword" component={ResetPassword} />
+        <Route eaxct path="/dashboard" component={Dashboard} />
         <Route eaxct path="/" component={Body} />
       </Switch>
       <Footer />
