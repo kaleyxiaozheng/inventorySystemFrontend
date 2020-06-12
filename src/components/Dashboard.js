@@ -8,7 +8,7 @@ export class Dashboard extends Component {
 
     render() {
         return (
-            <div className="bodyArea">
+            <div className="bodyArea">aa
             </div>
         );
     }
