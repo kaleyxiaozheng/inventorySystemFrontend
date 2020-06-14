@@ -1,3 +1,4 @@
+  
 import React, { Component } from 'react';
 import axios from "axios";
 import '../css/Form.css';
@@ -78,11 +79,10 @@ export class LoginForm extends Component {
           </div>
           <div className="submitLabel">
             <input className="submitInput" type="submit" path="/dashboard"></input>
-            <SubmitButtonRouter text="labelTitle" label="Submit" path="/dashboard"></SubmitButtonRouter>
+            <SubmitButtonRouter text="labelTitle" label="Submit" onClick={this.props.onClick} path="/dashboard"></SubmitButtonRouter>
           </div>
         </form>
       </div>
     );
   }
 }
-
