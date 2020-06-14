@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Login.css';
-import { LoginForm } from "./Form";
+import { Login } from "./Login";
 import { LabelTitle } from "./Label";
 import { LabelButtonRouter } from './Button';
 
