@@ -3,11 +3,11 @@ import { BrowserRouter } from "react-router-dom";
 import { LoginPage } from './LoginPage';
 import { Route, Switch } from "react-router";
 import { Header } from "./Header";
-import { Body } from "./Body";
+import { BodyPage } from "./BodyPage";
 import { Footer } from "./Footer";
-import { Signup } from "./Signup";
-import { ResetPassword } from "./ResetPassword";
-import { Dashboard } from "./Dashboard";
+import { SignupPage } from "./SignupPage";
+import { ResetPasswordPage } from "./ResetPasswordPage";
+import { DashboardPage } from "./DashboardPage";
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Switch className="bodyArea">
         <Route eaxct path="/login" component={LoginPage} />
-        <Route eaxct path="/signup" component={Signup} />
-        <Route eaxct path="/resetpassword" component={ResetPassword} />
-        <Route eaxct path="/dashboard" component={Dashboard} />
-        <Route eaxct path="/" component={Body} />
+        <Route eaxct path="/signup" component={SignupPage} />
+        <Route eaxct path="/resetpassword" component={ResetPasswordPage} />
+        <Route eaxct path="/dashboard" component={DashboardPage} />
+        <Route eaxct path="/" component={BodyPage} />
       </Switch>
       <Footer />
     </BrowserRouter>

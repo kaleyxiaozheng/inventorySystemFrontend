@@ -1,38 +1,36 @@
-import React, { Component } from 'react';
-import '../css/Login.css';
+import React from 'react';
+import '../css/LoginPage.css';
 import { Login } from "./Login";
-import { LabelTitle } from "./Label";
+import { SubTitle } from "./Title";
 import { LabelButtonRouter } from './Button';
 
-export class LoginPage extends Component {
+export const LoginPage = () => {
 
-    render() {
-        return (
-            <div className="bodyArea adminArea">
-                <div className="adminTop"></div>
-                <div className="adminBorder">
-                    <div className="innerLeft"></div>
-                    <div className="innerCentre">
-                        <div className="adminTitle">
-                            <h1><LabelTitle text="infoLabel" label="Sign in"></LabelTitle></h1>
-                        </div>
-                        <Login></Login>
-                        <div className="forgetLabel">
-                            <div className="left"></div>
-                            <div className="right">
-                                <div className="forgetTitle">
-                                    <LabelTitle label="Forget"></LabelTitle>
-                                </div>
-                                <div >
-                                    <LabelButtonRouter text="passwordTitle" label="password?" path="/resetpassword"></LabelButtonRouter>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="innerRight"></div>
-                </div>
-                <div className="adminBottom"></div>
+  return (
+    <div className="bodyArea adminArea">
+      <div className="adminTop"></div>
+      <div className="adminBorder">
+        <div className="innerLeft"></div>
+        <div className="innerCentre">
+          <div className="adminTitle">
+            <h1><SubTitle text="infoLabel" label="Sign in"></SubTitle></h1>
+          </div>
+          <Login></Login>
+          <div className="forgetLabel">
+            <div className="left"></div>
+            <div className="right">
+              <div className="forgetTitle">
+                <SubTitle label="Forget"></SubTitle>
+              </div>
+              <div >
+                <LabelButtonRouter text="passwordTitle" label="password?" path="/resetpassword"></LabelButtonRouter>
+              </div>
             </div>
-        );
-    }
+          </div>
+        </div>
+        <div className="innerRight"></div>
+      </div>
+      <div className="adminBottom"></div>
+    </div>
+  );
 }

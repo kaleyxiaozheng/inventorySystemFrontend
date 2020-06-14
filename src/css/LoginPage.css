@@ -1,0 +1,117 @@
+.adminArea {
+    background-color:#099ae8;
+    padding-top: 10px;
+}
+
+.adminTop {
+    height: 20%;
+}
+
+.adminBottom {
+    height: auto;
+}
+
+.adminTitle {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    height: 20%;
+}
+
+.adminBorder {
+    background-color: white;
+    margin: auto;
+    height: 70%;
+    width: 40%;
+    border-radius: 5%;
+    display: flex;
+    
+}
+
+.infoLabel {
+    font-weight: bolder;
+    text-align: left;
+    color: black;
+}
+
+.formLabel{
+    height: 10%;
+}
+
+.innerLeft {
+    width: 20%;
+}
+
+.innerCentre {
+    width: 60%;
+}
+
+.innerRight {
+    width:2%;
+}
+
+.checkboxLabel {
+    width: 18px;
+}
+
+.checkboxArea {
+    display: flex;
+    margin: auto;
+}
+
+.checkboxTitle {
+    padding: 10px;
+    display: flex;
+    font-weight: bolder;
+}
+
+.buttonLabel {
+    text-align: center;
+    width: 100%;
+    /* padding: 10px; */
+    
+}
+
+.forgetLabel {
+    display: flex;
+}
+
+.forgetTitle {
+    color: grey;
+    display: flex;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.left {
+    width: 70%;
+}
+
+.right {
+    display: flex;
+}
+
+.passwordTitle {
+    color: blue !important;
+    font-weight: bolder !important;
+}
+
+/* .submitButton{
+    width: 100%;
+} */
+
+.errorLabel {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.submitLabel {
+    /* background-color: dodgerblue; */
+    color: white;
+    padding-top: 10px;
+}
