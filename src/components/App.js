@@ -17,7 +17,7 @@ function App() {
         <Route eaxct path="/login" component={LoginPage} />
         <Route eaxct path="/signup" component={SignupPage} />
         <Route eaxct path="/resetpassword" component={ResetPasswordPage} />
-        <Route eaxct path="/:username/dashboard" component={DashboardPage} />
+        <Route eaxct path="/dashboard" component={DashboardPage} />
         <Route eaxct path="/" component={BodyPage} />
       </Switch>
       <Footer />
