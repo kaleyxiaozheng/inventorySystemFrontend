@@ -1,10 +1,10 @@
-
 import React, { Component } from 'react';
 import '../css/Login.css';
 import { SubmitButtonRouter } from './Button';
 import axios from 'axios';
 import qs from 'qs';
 import {withRouter} from 'react-router-dom';
+import { InputTitle } from './Label';
 
 export class Login extends Component {
 
@@ -62,35 +62,21 @@ export class Login extends Component {
       })
   }
 
-  // login = () => {
-  //   console.log(this.state.username, this.state.password);
-  //   const axios = require('axios').default;
-
-  //   axios({
-  //     method: 'post',
-  //     url: '/localhost:3000/login',
-  //     data: {
-  //       username: this.state.fields["username"],
-  //       password: this.state.fields["password"]
-  //     }
-  //   });
-  // }
-
   render() {
     const { username, password } = this.state;
     const { match, location, history } = this.props;
     return (
       <div>
         <form onSubmit = {this.submitHandler}>
-          <div className="lableForm">
-            <label>User Name</label>
+          <div className="inputTitle">
+            <InputTitle type="required" label="User Name"></InputTitle>
           </div>
           <div >
             <input className="inputForm" type="text" placeholder="User Name" name="username" onChange={this.changeHandler} value={username}></input>
             {/* <span className="error">{this.state.errors["username"]}</span> */}
           </div>
-          <div className="lableForm">
-            <label>Password</label>
+          <div className="inputTitle">
+            <InputTitle type="required"  label="Password"></InputTitle>
           </div>
           <div ></div>
           <input className="inputForm" type="password" placeholder="Password" name="password" onChange={this.changeHandler} value={password}></input>
@@ -101,7 +87,7 @@ export class Login extends Component {
           </div>
           <div className="submitLabel">
             {/* <SubmitButtonRouter text="labelTitle" label="Submit" login={this.login} ></SubmitButtonRouter> */}
-            <SubmitButtonRouter text="labelTitle" label="Submit" ></SubmitButtonRouter>
+            <SubmitButtonRouter text="labelTitle" label="Submit" checkValue={username.length === 0 || password.length === 0}></SubmitButtonRouter>
           </div>
         </form>
       </div>

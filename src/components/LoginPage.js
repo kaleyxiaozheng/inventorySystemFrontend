@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/LoginPage.css';
 import { LoginRouter } from "./Login";
-import { SubTitle } from "./Title";
+import { SubTitle } from './Label';
 import { LabelButtonRouter } from './Button';
 
 export const LoginPage = () => {

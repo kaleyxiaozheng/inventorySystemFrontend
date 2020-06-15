@@ -1,9 +1,15 @@
-.lableForm {
+.inputTitle {
   font-weight: bolder;
   text-align: left;
   padding-bottom: 10px;
   padding-top: 10px;
 }
+
+.required:after{
+  content: " *";
+  color: red;
+}
+
 input{
     height: 30px;
     /* width: 100%; */

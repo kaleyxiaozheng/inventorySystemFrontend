@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Login.css';
-import { SubTitle } from "./Title";
+import { SubTitle } from './Label';
 
 export const ResetPasswordPage = () => (
   <div className="bodyArea adminArea">
