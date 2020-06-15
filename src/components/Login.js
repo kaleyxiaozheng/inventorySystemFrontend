@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../css/Login.css';
 import { SubmitButtonRouter } from './Button';
 import axios from 'axios';
+import qs from 'qs';
 
 export class Login extends Component {
 
@@ -40,12 +41,18 @@ export class Login extends Component {
   }
 
   submitHandler = (event) => {
+
+    const qs = require('qs');
     event.preventDefault();
     console.log(this.state);
     axios 
-      .post('http://localhost:5000/login', this.state)
+      .post('http://localhost:5000/login', qs.stringify({username: this.state.username, password: this.state.password}))
       .then(response => {
         console.log(response)
+        // if(status === 200){
+        //   const username = response.data.username;
+        //   `/${username}/dashboard`
+        // }
       })
       .catch(error => {
         console.log(error)
