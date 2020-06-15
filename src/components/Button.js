@@ -20,7 +20,7 @@ class SubmitButton extends Component {
 
     return (
     <div >
-      <Button className="submitButton" variant="contained" color="primary" onClick={this.props.login}>{this.props.label}</Button>
+      <Button className="submitButton" type="submit" variant="contained" color="primary" onClick={this.props.login}>{this.props.label}</Button>
     </div>
     );
   }

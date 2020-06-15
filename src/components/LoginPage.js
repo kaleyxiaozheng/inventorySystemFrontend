@@ -15,7 +15,7 @@ export const LoginPage = () => {
           <div className="adminTitle">
             <h1><SubTitle text="infoLabel" label="Sign in"></SubTitle></h1>
           </div>
-          <Login></Login>
+          <Login />
           <div className="forgetLabel">
             <div className="left"></div>
             <div className="right">
