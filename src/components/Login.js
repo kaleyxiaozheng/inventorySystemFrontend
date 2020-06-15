@@ -4,6 +4,7 @@ import '../css/Login.css';
 import { SubmitButtonRouter } from './Button';
 import axios from 'axios';
 import qs from 'qs';
+import {withRouter} from 'react-router-dom';
 
 export class Login extends Component {
 
@@ -42,17 +43,19 @@ export class Login extends Component {
 
   submitHandler = (event) => {
 
-    const qs = require('qs');
     event.preventDefault();
     console.log(this.state);
     axios 
       .post('http://localhost:5000/login', qs.stringify({username: this.state.username, password: this.state.password}))
       .then(response => {
         console.log(response)
-        // if(status === 200){
-        //   const username = response.data.username;
-        //   `/${username}/dashboard`
-        // }
+
+        // go to dashboard if status is 200
+        if(response.status === 200){
+          const username = response.data.user_name;
+          console.log(response.date);
+          this.props.history.push(`${username}/dashboard`);
+        }
       })
       .catch(error => {
         console.log(error)
@@ -75,6 +78,7 @@ export class Login extends Component {
 
   render() {
     const { username, password } = this.state;
+    const { match, location, history } = this.props;
     return (
       <div>
         <form onSubmit = {this.submitHandler}>
@@ -104,3 +108,5 @@ export class Login extends Component {
     );
   }
 }
+
+export const LoginRouter =  withRouter(Login);

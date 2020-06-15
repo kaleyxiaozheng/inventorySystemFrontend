@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/LoginPage.css';
-import { Login } from "./Login";
+import { LoginRouter } from "./Login";
 import { SubTitle } from "./Title";
 import { LabelButtonRouter } from './Button';
 
@@ -15,7 +15,7 @@ export const LoginPage = () => {
           <div className="adminTitle">
             <h1><SubTitle text="infoLabel" label="Sign in"></SubTitle></h1>
           </div>
-          <Login />
+          <LoginRouter />
           <div className="forgetLabel">
             <div className="left"></div>
             <div className="right">
