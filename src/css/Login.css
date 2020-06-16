@@ -52,3 +52,9 @@ input{
 .submitLabel {
   padding-left: 10px;
 }
+
+.validationError {
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+}

@@ -3,7 +3,7 @@ import '../css/Login.css';
 import { SubmitButtonRouter } from './Button';
 import axios from 'axios';
 import qs from 'qs';
-import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { InputTitle } from './Label';
 
 export class Login extends Component {
@@ -14,60 +14,44 @@ export class Login extends Component {
     this.state = {
       username: '',
       password: '',
-      // errors: {}
+      errors: ''
     }
   }
-
-  // handleValidation = () => {
-  //   let fields = this.state.fields;
-  //   let errors = {};
-  //   let formIsValid = true;
-
-  //   if (!username) {
-  //     formIsValid = false;
-  //     errors["username"] = "User name can not be empty";
-  //   }
-
-  //   if (password) {
-  //     formIsValid = false;
-  //     errors["password"] = "Password can not be empty";
-  //   }
-
-  //   this.setState({ errors: errors });
-  //   return formIsValid;
-  // }
 
   changeHandler = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   }
 
   submitHandler = (event) => {
-
+    const errors = this.state.errors;
     event.preventDefault();
     console.log(this.state);
-    axios 
-      .post('http://localhost:5000/login', qs.stringify({username: this.state.username, password: this.state.password}))
+    axios
+      .post('http://localhost:5000/login', qs.stringify({ username: this.state.username, password: this.state.password }))
       .then(response => {
         console.log(response)
 
         // go to dashboard if status is 200
-        if(response.status === 200){
+        if (response.status === 200) {
           const username = response.data.user_name;
           console.log(response.date);
           this.props.history.push(`${username}/dashboard`);
         }
       })
       .catch(error => {
-        console.log(error)
+        console.log(error);
+        this.setState({ errors: 'Invalid username or password' });
+        console.log(errors);
       })
   }
 
   render() {
-    const { username, password } = this.state;
+    const { username, password, errors } = this.state;
     const { match, location, history } = this.props;
     return (
       <div>
-        <form onSubmit = {this.submitHandler}>
+        <form onSubmit={this.submitHandler}>
+          <p className="validationError">{errors}</p>
           <div className="inputTitle">
             <InputTitle type="required" label="User Name"></InputTitle>
           </div>
@@ -76,7 +60,7 @@ export class Login extends Component {
             {/* <span className="error">{this.state.errors["username"]}</span> */}
           </div>
           <div className="inputTitle">
-            <InputTitle type="required"  label="Password"></InputTitle>
+            <InputTitle type="required" label="Password"></InputTitle>
           </div>
           <div ></div>
           <input className="inputForm" type="password" placeholder="Password" name="password" onChange={this.changeHandler} value={password}></input>
@@ -86,8 +70,7 @@ export class Login extends Component {
             <label className="rembMe" >Remember me</label>
           </div>
           <div className="submitLabel">
-            {/* <SubmitButtonRouter text="labelTitle" label="Submit" login={this.login} ></SubmitButtonRouter> */}
-            <SubmitButtonRouter text="labelTitle" label="Submit" checkValue={username.length === 0 || password.length === 0}></SubmitButtonRouter>
+            <SubmitButtonRouter text="labelTitle" label="Submit" checkValue={!username || !password}></SubmitButtonRouter>
           </div>
         </form>
       </div>
@@ -95,4 +78,4 @@ export class Login extends Component {
   }
 }
 
-export const LoginRouter =  withRouter(Login);
+export const LoginRouter = withRouter(Login);
