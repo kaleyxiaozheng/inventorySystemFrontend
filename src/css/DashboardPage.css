@@ -1,0 +1,14 @@
+.lcol {
+  display: inline-block;
+  vertical-align:top;
+  height: 100%;
+}
+
+.breadcrumbs {
+  width: 20%;
+  float: left;
+}
+
+.dashboardCard {
+  width: 80%;
+}
