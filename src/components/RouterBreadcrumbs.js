@@ -8,14 +8,15 @@ import { Route, MemoryRouter } from 'react-router';
 import { ListItemLink, breadcrumbNameMap } from './ListItemLink';
 import { useStyles } from './UseStyles';
 import { LinkRouter } from './LinkRouter'
+import '../css/RouterBreadcrumbs.css';
 
 
 export default function RouterBreadcrumbs() {
   const classes = useStyles();
-  const [openInventory, setOpenInventory] = React.useState(true);
-  const [openStocks, setOpenStocks] = React.useState(true);
-  const [openPurchaseorders, setOpenPurchaseorders] = React.useState(true);
-  const [openCrm, setOpenCrm] = React.useState(true);
+  const [openInventory, setOpenInventory] = React.useState(false);
+  const [openStocks, setOpenStocks] = React.useState(false);
+  const [openPurchaseorders, setOpenPurchaseorders] = React.useState(false);
+  const [openCrm, setOpenCrm] = React.useState(false);
 
   const inventoryHandleClick = () => {
     setOpenInventory((prevOpen) => !prevOpen);
@@ -42,8 +43,8 @@ export default function RouterBreadcrumbs() {
 
             return (
               <Breadcrumbs aria-label="breadcrumb">
-                <LinkRouter color="inherit" to="/">
-                  Home
+                <LinkRouter color="inherit" to="/" className="dashboard">
+                  Dashboard
                 </LinkRouter>
                 {pathnames.map((value, index) => {
                   const last = index === pathnames.length - 1;
