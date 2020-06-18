@@ -7,7 +7,8 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link as RouterLink } from 'react-router-dom';
 
-export const breadcrumbNameMap = {
+export const InventorySystemNameMap = {
+  '/dashboard': 'Dashpoard',
   '/inventory': 'Inventory',
   '/inventory/stocks': 'Stocks',
   '/inventory/stocks/stocksdetails': 'Stocks Details',
@@ -28,7 +29,7 @@ export const breadcrumbNameMap = {
 
 export function ListItemLink(props) {
   const { to, open, ...other } = props;
-  const primary = breadcrumbNameMap[to];
+  const primary = InventorySystemNameMap[to];
 
   return (
     <li>

@@ -1,13 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export const useStyles = makeStyles((theme) => ({
+export const navibarUseStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    // width: 360,
+    paddingLeft: '15px',
   },
   lists: {
-    // backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(1),
   },
   nested: {
@@ -15,5 +14,8 @@ export const useStyles = makeStyles((theme) => ({
   },
   subnested: {
     paddingLeft: theme.spacing(8),
+  },
+  dashboard: {
+    fontWeight: 'bolder !important',
   },
 }));
