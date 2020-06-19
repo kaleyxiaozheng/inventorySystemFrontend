@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/DashboardPage.css";
 import { Link } from "react-router-dom";
+import AppDrawer from "./AppDrawer";
 const styles = {
   IndentationLevel1: { marginLeft: "1rem", color: "#000" },
   IndentationLevel2: { marginLeft: "2rem", color: "#000" },
@@ -27,14 +28,63 @@ const styles = {
     marginRight: "25rem",
     marginBottom: "5rem",
   },
-  TextCentered:{padding:'40px'},
-  leftContainer:{ height: "20rem", flex: 0.8, float: "left" },
-  rightContainer:{ height: "20rem", flex: 0.8, float: "right" }
+  TextCentered: {
+    height: 100,
+    width: 200,
+    margin: 80,
+    backgroundColor: "#FFF",
+    // float: "left",
+    padding:25
+  },
+  leftContainer: {},
+  rightContainer: {},
 };
 export const DashboardPage = () => (
-  <div className="bodyArea">
-    <h3>Dashboard</h3>
-    <div style={styles.MenuContainer}>
+  <React.Fragment>
+    <AppDrawer
+      content={
+        <div
+          className="bodyArea"
+          style={{ height: "50rem", marginTop: "5rem" }}
+        >
+          <div >
+          {/* <div style={styles.leftContainer}> */}
+          <div style={styles.TextCentered}>
+            <p>Today's orders</p>
+          </div>
+          <div style={styles.TextCentered}>
+            <p>Today's Sales</p>
+          </div>
+          <div style={styles.TextCentered}>
+            <p>Barchart here</p>
+          </div>
+          </div>
+          {/* </div> */}
+          {/* <div style={styles.rightContainer}> */}
+          <div >
+          <div style={styles.TextCentered}>
+            <p>Today's Sales</p>
+          </div>
+          <div style={styles.TextCentered}>
+            <p>Today's Orders</p>
+          </div>
+          <div style={styles.TextCentered}>
+            <p>Vehicles in warehouse</p>
+          </div>
+          </div>
+          {/* </div> */}
+        </div>
+      }
+    />
+  </React.Fragment>
+);
+
+{
+  /* <h3>Dashboard</h3> */
+}
+{
+  /* <div style={styles.MenuContainer}>
+  style={{float:'right',paddingRight:'10%'}}
       <ul style={styles.List}>
         <li>
           <Link to="/dashboard" style={styles.Link}>
@@ -127,28 +177,5 @@ export const DashboardPage = () => (
           </Link>{" "}
         </li>
       </ul>
-    </div>
-    <div style={styles.leftContainer}>
-      <div style={styles.components}>
-        <p style={styles.TextCentered}>Today's orders</p>
-      </div>
-      <div style={styles.components}>
-        <p style={styles.TextCentered}>Today's Sales</p>
-      </div>
-      <div style={styles.components}>
-        <p style={styles.TextCentered}>Barchart here</p>
-      </div>
-    </div>
-    <div style={styles.rightContainer}>
-      <div style={styles.componentRight}>
-        <p style={styles.TextCentered}>Today's Sales</p>
-      </div>
-      <div style={styles.componentRight}>
-        <p style={styles.TextCentered}>Today's Orders</p>
-      </div>
-      <div style={styles.componentRight}>
-        <p style={styles.TextCentered}>Vehicles in warehouse</p>
-      </div>
-    </div>
-  </div>
-);
+    </div> */
+}
