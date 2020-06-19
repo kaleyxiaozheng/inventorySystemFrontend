@@ -8,7 +8,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const InventorySystemNameMap = {
-  '/dashboard': 'Dashpoard',
+  '/dashboard': 'Dashboard',
   '/inventory': 'Inventory',
   '/inventory/stocks': 'Stocks',
   '/inventory/stocks/stocksdetails': 'Stocks Details',
