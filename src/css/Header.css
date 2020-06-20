@@ -9,14 +9,16 @@
 .container-1 {
   width: 33%;
 }
+
 .container-2 {
   width: 33%;
 }
+
 .container-3 {
-  width: 33%;
+  width: 20%;
 }
 
-.item-3 {
+.header-item-3 {
   align-self: flex-end;
 }
 
