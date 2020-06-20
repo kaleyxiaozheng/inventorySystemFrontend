@@ -1,11 +1,11 @@
 /* eslint-disable no-nested-ternary */
-import React from 'react';
-import List from '@material-ui/core/List';
-import Collapse from '@material-ui/core/Collapse';
-import { MemoryRouter } from 'react-router';
-import { ListItemLink } from './ListItemLink';
-import { navibarUseStyles } from './UseStyles';
-import '../css/NaviBar.css';
+import React from "react";
+import List from "@material-ui/core/List";
+import Collapse from "@material-ui/core/Collapse";
+import { MemoryRouter } from "react-router";
+import { ListItemLink } from "./ListItemLink";
+import { navibarUseStyles } from "./UseStyles";
+import "../css/NaviBar.css";
 
 export default function NaviBar(props) {
   const classes = navibarUseStyles();
@@ -31,7 +31,7 @@ export default function NaviBar(props) {
   };
 
   return (
-    <MemoryRouter initialEntries={['/Inventory']} initialIndex={0}>
+    <MemoryRouter initialEntries={["/Inventory"]} initialIndex={0}>
       <div className={classes.root}>
         <ListItemLink to="/dashboard" onClick={() => props.switchPages("mainDashboard")} />
         <nav className={classes.lists} aria-label="folders">

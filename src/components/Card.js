@@ -1,8 +1,8 @@
-import React from 'react';
-import '../css/Footer.css';
+import React from "react";
+import "../css/Card.css";
 
 export const Card = () => (
-  <div className="footArea">
+  <div className="card-container">
     <p>Card</p>
   </div>
-)   
+);

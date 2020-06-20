@@ -1,14 +1,20 @@
-.lcol {
-  display: inline-block;
-  vertical-align:top;
-  height: 100%;
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #099ae8;
+  flex: 1;
+  align-items: flex-start;
+  padding-top: 30px;
 }
 
-.breadcrumbs {
+.navi-bar {
   width: 20%;
-  float: left;
 }
 
-.dashboardCard {
-  width: 80%;
+.content {
+  width: 80 *;
+  flex-grow: 2;
 }

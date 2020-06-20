@@ -1,60 +1,41 @@
-.inputTitle {
+.validationError {
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-title {
   font-weight: bolder;
   text-align: left;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
-.required:after{
-  content: " *";
-  color: red;
+.input-form {
+  width: 250px;
+  height: 25px;
 }
 
-input{
-    height: 30px;
-    /* width: 100%; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-left: 10px;
-    font-weight: bolder;
-    
-}
-
-.checkboxForm {
+.checkbox-form {
   display: flex;
-  padding-top: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 5%;
 }
 
-.checkboxCheck{
-  height: auto ;
-}
-
-.rembMe {
-  font-weight: bolder;
-  padding-left: 10px;
-}
-
-.inputForm {
-  width:100%;
-}
-
-.error {
-  color: red;
+.item-title {
   font-weight: bolder;
 }
 
-.submitInput {
-  background-color: #005ce6;
-  color: white;
+.item-submit {
+  margin-top: 15px;
+}
+
+.submit-button {
   width: 100%;
-}
-
-.submitLabel {
-  padding-left: 10px;
-}
-
-.validationError {
-  color: red;
-  font-size: larger;
-  font-weight: bolder;
 }

@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import '../css/TractOrders.css';
+import React, { Component } from "react";
+import "../css/TractOrders.css";
 
 export class TractOrders extends Component {
   render() {
-    return (
-      <div className="sub">
-        Tract Orders Page
-      </div>  
-    );
+    return <div className="tract-orders-container">Tract Orders Page</div>;
   }
 }

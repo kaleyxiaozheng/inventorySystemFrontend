@@ -1,52 +1,29 @@
-  .headerArea {
-    display: flex;
-    height: 70px;
-  }
-  
-   .leftHeader {
-      width: 40%;
-  }
-
-  .centreHeader {
-    width: 33%;
-    display: flex;
-    margin: auto;
-    padding: 10px;
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
 }
-  
-  .rightHeader {
-    width: auto;
-    display: flex;
-    margin: auto;
-    padding-top: 28px;
-    /* padding: 40px; */
-  }
 
-  .invenLogo {
-      height: 50px;
-  }
+.container-1 {
+  width: 33%;
+}
+.container-2 {
+  width: 33%;
+}
+.container-3 {
+  width: 33%;
+}
 
-  .invenTitle {
-      padding-left: 15px;
-  }
+.item-3 {
+  align-self: flex-end;
+}
 
-  .labelTitle {
-    color: dimgrey !important;
-    font-weight: bolder !important;
-  }
- 
-  /* .projectTitle{
-    color: black !important;
-    font-size: 25px;
-    display: flex;
-    padding: 10px;
+a {
+  text-decoration-line: none;
+}
 
-  } */
-
-  h3{
-    color: black;
-  }
-
-  a {
-    text-decoration: none;
-  }
+h3 {
+  color: black;
+}

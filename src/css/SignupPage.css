@@ -1,3 +1,9 @@
-.signupArea {
-    background-color: #099ae8;;
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #099ae8;
+  flex: 1;
+  flex-direction: column;
 }

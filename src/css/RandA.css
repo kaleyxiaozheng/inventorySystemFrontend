@@ -1,4 +1,9 @@
-.sub {
+.report-analysis-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
   font-weight: bolder;
   padding-top: 30px;
 }

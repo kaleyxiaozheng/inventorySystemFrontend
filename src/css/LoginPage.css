@@ -1,118 +1,52 @@
-.adminArea {
-    background-color:#099ae8;
-    padding-top: 10px;
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #099ae8;
+  flex: 1;
 }
 
-.adminTop {
-    height: 20%;
+.login-container-1 {
+  width: 30%;
 }
 
-.adminBottom {
-    height: auto;
+.login-container-2 {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 65%;
 }
 
-.adminTitle {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-    height: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: black;
+.login-container-3 {
+  width: 30%;
 }
 
-.infoLabel {
-  color: black;
+.item-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 80px;
 }
 
-.adminBorder {
-    background-color: white;
-    margin: auto;
-    height: 70%;
-    width: 40%;
-    border-radius: 5%;
-    display: flex;
-    
+.item-forget {
+  font-size: 18px;
+  color: grey;
+  font-weight: bolder;
 }
 
-.formLabel{
-    height: 10%;
+.item-password {
+  padding-top: 5px;
 }
 
-.innerLeft {
-    width: 20%;
-}
-
-.innerCentre {
-    width: 60%;
-}
-
-.innerRight {
-    width:2%;
-}
-
-.checkboxLabel {
-    width: 18px;
-}
-
-.checkboxArea {
-    display: flex;
-    margin: auto;
-}
-
-.checkboxTitle {
-    padding: 10px;
-    display: flex;
-    font-weight: bolder;
-}
-
-.buttonLabel {
-    text-align: center;
-    width: 100%;
-    /* padding: 10px; */
-    
-}
-
-.forgetLabel {
-    display: flex;
-}
-
-.forgetTitle {
-    color: grey;
-    display: flex;
-    margin: auto;
-    font-weight: bolder;
-}
-
-.left {
-    width: 70%;
-}
-
-.right {
-    display: flex;
-}
-
-.passwordTitle {
-    color: blue !important;
-    font-weight: bolder !important;
-}
-
-/* .submitButton{
-    width: 100%;
-} */
-
-.errorLabel {
-    color: red;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.submitLabel {
-    /* background-color: dodgerblue; */
-    color: white;
-    padding-top: 10px;
+.password {
+  color: blue !important;
+  font-weight: bolder !important;
 }

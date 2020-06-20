@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import '../css/Products.css';
+import React, { Component } from "react";
+import "../css/Products.css";
 
 export class Products extends Component {
   render() {
-    return (
-      <div className="sub">
-        Products Page
-      </div>  
-    );
+    return <div className="product-container">Products Page</div>;
   }
 }
