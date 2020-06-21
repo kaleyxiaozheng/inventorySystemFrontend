@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   background-color: #099ae8;
   flex: 1;
+  height: 50rem;
 }
 
 .login-container-1 {

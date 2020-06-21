@@ -3,10 +3,14 @@ import "../css/LoginPage.css";
 import { LoginRouter } from "./Login";
 import { SubTitle } from "./Label";
 import { LabelButtonRouter } from "./Button";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 
 export const LoginPage = () => {
   return (
-    <div className="login-container">
+    <div style={{height:'90rem'}}>
+      <Header /> 
+      <div className="login-container">
       <div className="login-container-1"></div>
       <div className="login-container-2">
         <div className="item-1">
@@ -28,5 +32,8 @@ export const LoginPage = () => {
       </div>
       <div className="login-container-3"></div>
     </div>
+    <Footer />
+    </div>
+    
   );
 };

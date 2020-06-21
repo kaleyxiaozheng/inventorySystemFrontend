@@ -14,6 +14,9 @@ import { Customers } from "./Customers";
 import { Shipping } from "./Shipping";
 import { RandA } from "./RandA";
 import { Setting } from "./Setting";
+import { Button } from "@material-ui/core";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 
 const pageMapping = {
   mainDashboard: <DashboardCardPage />,
@@ -42,13 +45,19 @@ export class DashboardPage extends Component {
   };
 
   render() {
+    
     return (
-      <div className="dashboard-container">
+      <React.Fragment>
+        <Header username={this.props.match.params?.username}/> 
+        <div className="dashboard-container">
         <div className="item navi-bar breadcrumbs">
           <NaviBar switchPages={this.switchPages} />
         </div>
         <div className="item content ">{pageMapping[this.state.page]}</div>
       </div>
+      <Footer />
+      </React.Fragment>
+      
     );
   }
 }
