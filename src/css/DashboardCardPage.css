@@ -1,0 +1,15 @@
+.dashboardcardpage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #099ae8;
+  flex: 1;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+}

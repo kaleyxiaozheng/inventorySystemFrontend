@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 export const Header = () => (
   <div className="flexbox-container">
-    <div className="flexbox-container container-1"></div>
-    <div className="flexbox-container container-2">
+    <div className="flexbox-container header-container-1"></div>
+    <div className="flexbox-container header-container-2">
       <div className="item-1">
         <a href="/">
           <img className="flexbox-item logo" src={invenLogo} />
@@ -19,7 +19,7 @@ export const Header = () => (
         </Link>
       </div>
     </div>
-    <div className="flexbox-container container-3">
+    <div className="flexbox-container header-container-3">
       <div className="header-item-3">
         <LabelButtonRouter text="labelTitle" label="Login" path="/login"></LabelButtonRouter>
       </div>
